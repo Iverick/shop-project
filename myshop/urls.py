@@ -24,7 +24,3 @@ urlpatterns = [
     url(r'^orders/', include('orders.urls', namespace='orders')),
     url(r'^', include('shop.urls', namespace='shop')),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL,
-                          document_root=settings.MEDIA_ROOT)
