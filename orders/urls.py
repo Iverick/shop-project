@@ -1,4 +1,6 @@
+# django imports
 from django.conf.urls import url
+# local imports
 from . import views
 
 urlpatterns = [
