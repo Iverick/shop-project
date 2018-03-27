@@ -33,7 +33,9 @@ def product_list(request, category_slug=None):
 # http://localhost:8000/<id>/<slug>/
 def product_detail(request, id, slug):
     '''
-    View returns page contains detailed info about selected product
+    View returns page contains detailed info about selected product.
+    Contains details about the selected product and allows to add it to the
+    user's cart using CartAddProductForm
 
     Args:
         id(int): '1' (quite obvious, isn't it)
